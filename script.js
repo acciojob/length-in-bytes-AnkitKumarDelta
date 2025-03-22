@@ -5,13 +5,7 @@ const byteSize = (str) => {
 			s[i] = str[i]-'a';
 		}
 if(str=="")return 0;
-	else{
-		let count = 0;
-		for(let i=0;i<s.length;i++){
-			count++;
-		}
-		return count;
-	}
+		return s.length;
 	
 };
 
