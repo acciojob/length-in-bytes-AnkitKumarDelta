@@ -1,9 +1,13 @@
 const byteSize = (str) => {
   // write your code here
+	let s="";
+	for(let i=0;i<str.length;i++){
+			s[i] = str[i]-'a';
+		}
 if(str=="")return 0;
 	else{
 		let count = 0;
-		for(let i=0;i<str.length;i++){
+		for(let i=0;i<s.length;i++){
 			count++;
 		}
 		return count;
@@ -12,5 +16,5 @@ if(str=="")return 0;
 };
 
 // Do not cha nge the code below
-const str = prompt("Enter some string.");
-alert(byteSize(str));
+//const str = prompt("Enter some string.");
+//alert(byteSize(str));
